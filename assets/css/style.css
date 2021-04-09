@@ -1,8 +1,100 @@
-/* Header class */
+/* Utility class */
+body{
+    font-family: 'Inter-Medium','Helvetica','san-serif';
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*********** Header class ***********/
+/* |||||||Nav Bar||||||| */
 .row_nav{
     margin: 20px 0;
-    line-height: 40px;
+    line-height: 30px;
+    font-size: 0.8rem;
+    background-color: white;
 }
 .logo_nav{
-    height: 40px;
+    height: 30px;
+}
+.fa-bars{
+    font-size: 25px;
+}
+/*** layout ***/
+.row_nav ul li {
+    display: inline-block;
+}
+.menu_center{
+    display: flex;
+    justify-content: flex-start;
+}
+.menu_center li:not(:first-child){
+    padding-left: 30px;
+}
+.menu_right{
+    display: flex;
+    justify-content: flex-end;
+}
+.menu_right li{
+    padding-right: 20px;
+}
+/*** /layout ***/
+/*** style ***/
+nav a{
+    color:#031C4E;
+}
+nav li a i{
+    font-size: 0.8rem;
+}
+/* bottone blu */
+.menu_right li:last-child a{
+    color: #016DFF;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border:1px solid #016DFF;
+}
+.menu_right li:last-child:hover a{
+    color: white;
+    background-color: #016DFF;
+}
+/* bottone blu */
+/* /stile */
+/* |||||||/Nav Bar||||||| */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MADIA QUERY */
+@media screen and (max-width:767px){
+    .menu_right, .menu_center{
+        display: none;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    .menu_right, .menu_center{
+        display: none;
+    }
+}
+@media screen and (min-width:992px){
+    .row_nav div:last-child{
+        display: none;
+    }
 }
