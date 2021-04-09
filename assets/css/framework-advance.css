@@ -12,7 +12,6 @@
 }
 .row{
     width: 100%;
-
 }
 .row::after{
     display: table;
@@ -20,15 +19,12 @@
     clear: both;
 }
 .dbg [class*="col-"] {
-    height: 200px;
     background-color: aquamarine;
     border: 2px solid red;
 }
 .txt_center{
     text-align: center;
 }
-
-
 /* 12 colonne */
 
 /* con questo attributo diciamo che tutte le colonne devono floattare */

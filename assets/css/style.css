@@ -1,12 +1,21 @@
 /* Utility class */
 body{
-    font-family: 'Inter-Medium','Helvetica','san-serif';
+    font-family: 'Open Sans', sans-serif;
 }
 ul{
     list-style: none;
 }
 a{
     text-decoration: none;
+}
+.txt_weight-600{
+    font-weight: 600;
+}
+.txt_white{
+    color: white;
+}
+h2{
+    color:#031C4E;
 }
 /*********** Header class ***********/
 /* |||||||Nav Bar||||||| */
@@ -31,19 +40,20 @@ a{
     justify-content: flex-start;
 }
 .menu_center li:not(:first-child){
-    padding-left: 30px;
+    padding-left: 20px;
 }
 .menu_right{
     display: flex;
     justify-content: flex-end;
 }
-.menu_right li{
+.menu_right li:not(:last-child){
     padding-right: 20px;
 }
 /*** /layout ***/
 /*** style ***/
 nav a{
     color:#031C4E;
+    font-weight: 600;
 }
 nav li a i{
     font-size: 0.8rem;
@@ -60,23 +70,92 @@ nav li a i{
     background-color: #016DFF;
 }
 /* bottone blu */
-/* /stile */
+/*** /stile ***/
 /* |||||||/Nav Bar||||||| */
 
+/* |||||||/Jumbotron||||||| */
+.jumbotron{
+    background-image: url("../img/bg-banner-home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container.row.jumbo{
+    padding: 3rem 0;
+}
+/*** Jumbotext ***/
+#jumbotext{
+    width: 50%;
+}
+#jumbotext h1{
+    font-size: 2.5rem;
 
+}
+#jumbotext p{
+    padding: 30px 0 ;
+    font-size: 1rem;
+    line-height: 35px;
+}
+/*** /Jumbotext ***/
 
+/*** Jumbo_form ***/
 
+.jumbo_form{
+    width: 40%;
+    float: right;
+    border-radius: 10px;
+    background-color: white;
+}
+.form_title{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
+.jumbo_input>*, .jumbo_signin button{
+    width: 80%;
+    margin-top: 15px;
+    padding: 12px 5px;
+    border-radius: 5px;
+    border: none; 
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+.jumbo_signin button{
+    font-size: 15px;
+    color: white;
+    background-color: #016DFF;
+}
+.signup_google div:first-child{
+    font-size: 15px;
+    background-color: #e0e0e0;
+    margin: 15px 10%;
+    padding: 10px 5px;
+    border-radius: 7px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+.signup_google div:first-child img{
+    height: 22px;
+    position: absolute;
+    top:50%;
+    left:10px;
+    transform: translate(0,-50%);
+}
+.signup_google div:first-child a{
+    padding: 15px 5px;
+    color: #031C4E;
+    font-weight: 600
+}
+.signup_google div:last-child{
+    font-size: 15px;
+    color: #031C4E;
+    margin:20px 0 1rem;   
+}
+.signup_google div:last-child span{
+    margin-top: 20px;
+}
+.signup_google div:last-child a{
+    color: #016DFF;
+    text-decoration: underline #016DFF;   
+}
 
 
 
@@ -87,10 +166,27 @@ nav li a i{
     .menu_right, .menu_center{
         display: none;
     }
+    
+    #jumbotext{
+        width: auto;
+        margin: auto 5%;
+    }
+    .jumbo_form{
+        width: 80%;
+        margin: auto 10%;
+    }
 }
 @media screen and (min-width:768px) and (max-width:991px){
+
+
     .menu_right, .menu_center{
         display: none;
+    }
+    #jumbotext{
+        margin-left: 20px;
+    }
+    .jumbo_form{
+        margin-right: 20px;
     }
 }
 @media screen and (min-width:992px){

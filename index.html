@@ -8,17 +8,20 @@
     <link rel="stylesheet" href="./assets/css/framework-advance.css">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font-style -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="shortcut icon" href="./assets/img/HubSpot-Inversed-Favicon.webp" type="image/x-icon">
     <!-- Favicon -->
     <link rel="shortcut icon" href="https://www-static.cdn.prismic.io/www-static%2F903fd83b-8963-42c2-baf6-44f4d6bb83f2_digitalocean-logo-mark.svg" type="image/x-icon">
-    <title>Digital Ocean</title>
+    <title>DigitalOcean</title>
 </head>
 <body class="">
     <header>
         <!-- |||||||Nav Bar||||||| -->
-        <nav>
+        <nav class="txt_blue">
             <div class="container">
                 <div class="row row_nav ">
 
@@ -60,27 +63,47 @@
             </div>
         </nav>
         <!-- |||||||/Nav Bar||||||| -->
+        <!-- |||||||Jumbotron||||||| -->
         <div class="jumbotron">
-            <div class="container">
+            <div class="container row jumbo">
                 <div id="jumbotext" class="col-xs-12 col-md-7 col-lg-7">
-                    <h1>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, inventore.
+                    <h1 class="txt_white">
+                        The simplest cloud platform for developers & teams
                     </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam laboriosam itaque expedita iste temporibus autem illo dignissimos, aspernatur inventore fuga veritatis similique ad adipisci rerum nostrum ipsum, totam dolorem doloremque.
+                    <p class="txt_white">
+                        Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.
                     </p>
                 </div>
-                <div id="jumbo_form" class="col-xs-12 col-md-4 col-lg-5">
-                    <form>
-                        <h2>Lorem ipsum dolor sit.</h2>
-                        <h2>Lorem, ipsum.</h2>
-                        <input type="email" placeholder="Email" required>
-                        <input id="pass" type="password" placeholder="Password" required>
-                        
+                
+                <div class="jumbo_form col-xs-12 col-md-5 col-lg-5">
+
+                    <form class="form txt_center">
+                        <div class="form_title  txt_blue">
+                            <h2>Deply your app in seconds.</h2>
+                            <h2>Get started now.</h2>
+                        </div>
+                        <div class="jumbo_input">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <div class="jumbo_signin">
+                                <button class="sign_in txt_weight-600">Create your account now</button>
+                        </div>
+                        <div class="signup_google">
+                            <div>
+                               <img src="./assets/img/google-icon.png" alt=""><a href="#" class="with_google">Singup with Google</a>
+                            </div>
+                            <div>
+                                <span>By signing up you agree to the <a href="#">Terms of Service</a></span>
+                            </div>    
+                        </div>
                     </form>
+
                 </div>
+                
             </div>
         </div>
+        <!-- |||||||/Jumbotron||||||| -->
     </header>
 </body>
 </html>
