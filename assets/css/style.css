@@ -73,7 +73,7 @@ nav li a i{
 /*** /stile ***/
 /* |||||||/Nav Bar||||||| */
 
-/* |||||||/Jumbotron||||||| */
+/* |||||||Jumbotron||||||| */
 .jumbotron{
     background-image: url("../img/bg-banner-home.jpg");
     background-size: cover;
@@ -109,7 +109,6 @@ nav li a i{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
 .jumbo_input>*, .jumbo_signin button{
     width: 80%;
     margin-top: 15px;
@@ -123,6 +122,8 @@ nav li a i{
     color: white;
     background-color: #016DFF;
 }
+
+/* signup firstchild */
 .signup_google div:first-child{
     font-size: 15px;
     background-color: #e0e0e0;
@@ -144,6 +145,9 @@ nav li a i{
     color: #031C4E;
     font-weight: 600
 }
+/* signup firstchild */
+
+/* signup lastchild */
 .signup_google div:last-child{
     font-size: 15px;
     color: #031C4E;
@@ -156,6 +160,53 @@ nav li a i{
     color: #016DFF;
     text-decoration: underline #016DFF;   
 }
+/* signup lastchild */
+/*** /Jumbo_form ***/
+/* |||||||/Jumbotron||||||| */
+/*********** /Header class ***********/
+
+/*********** /Main class ***********/
+/* |||||||Section 1||||||| */
+.frame_sc_one{
+    background-color: #F3F5F9;
+}
+/* txt frame one */
+.title_frm1{
+    margin-top: 30px;
+    font-size: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.title_frm1 h2{
+    color: #76819C;
+}
+.story_frm1{
+    margin-bottom: 30px;
+    justify-content: center;
+}
+.story_frm1 a{
+    font-size: 0.8rem;
+    color:#006AFF;
+}
+/* /txt frame one */
+
+/* img frame one */
+
+.img_frm1{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.img_frm1 img{
+    width: 150px;
+}
+/* /img frame one */
+
+
+
+
+
+
+
 
 
 
@@ -163,22 +214,41 @@ nav li a i{
 
 /* MADIA QUERY */
 @media screen and (max-width:767px){
+
+    /* Header query */
     .menu_right, .menu_center{
         display: none;
     }
-    
     #jumbotext{
         width: auto;
         margin: auto 5%;
     }
+    #jumbotext h1{
+        font-size: 45px;
+    }
     .jumbo_form{
-        width: 80%;
-        margin: auto 10%;
+        width: 90%;
+        margin: auto 5%;
+    }
+    /* /Header query */
+
+    /* Main query */
+    /*frame one */
+    .title_frm1 h2{
+        font-size: 22px;
+    }
+    .img_frm1 img{
+        width: 220px;   
+    }
+    .story_frm1 a{
+        font-size: 18px;
     }
 }
+
+
 @media screen and (min-width:768px) and (max-width:991px){
 
-
+    /* Header query */
     .menu_right, .menu_center{
         display: none;
     }
@@ -186,11 +256,27 @@ nav li a i{
         margin-left: 20px;
     }
     .jumbo_form{
+        width: 35%;
+        margin-top: 30px;
         margin-right: 20px;
     }
+    /* /Header query */
+
+    /* Main query */
+    /* img frame one */
+    .img_frm1 img{
+        width: 100px;   
+    }
 }
+
+
 @media screen and (min-width:992px){
+    /* Header query */
     .row_nav div:last-child{
         display: none;
     }
+    /* /Header query */
+
+
+
 }
