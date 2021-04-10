@@ -175,7 +175,6 @@ nav li a i{
     margin-top: 30px;
     font-size: 0.5rem;
     justify-content: center;
-    align-items: center;
 }
 .title_frm1 h2{
     color: #76819C;
@@ -191,7 +190,6 @@ nav li a i{
 /* /txt frame one */
 
 /* img frame one */
-
 .img_frm1{
     flex-wrap: wrap;
     justify-content: space-around;
@@ -200,8 +198,23 @@ nav li a i{
     width: 150px;
 }
 /* /img frame one */
+/* |||||||/Section 1||||||| */
 
-
+/* |||||||Section 2||||||| */
+/* title and p */
+.title_frm2{
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.title_frm2 h2{
+    font-size: 35px;
+    padding: 20px;
+}
+.title_frm2 p{
+    line-height: 35px;
+}
+/* title and p */
 
 
 
