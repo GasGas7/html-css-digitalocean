@@ -17,6 +17,8 @@ a{
 h2{
     color:#031C4E;
 }
+/* /Utility class */
+
 /*********** Header class ***********/
 /* |||||||Nav Bar||||||| */
 .row_nav{
@@ -213,13 +215,44 @@ nav li a i{
 }
 .title_frm2 p{
     line-height: 35px;
+    font-size: 1.12rem;
 }
 /* title and p */
 
+/* list_fr2 */
+.list_fr2_int{
+    border-left: 1px solid grey;  
+}
+.list_fr2 ul li{
+    padding-left: 30px;
+    padding-bottom: 20px;
+    font-size: 1.3rem;
+    color:#75809A;
+}
+.list_fr2 ul li:last-child{
+    padding-bottom: 10px;
+}
+/* /list_fr2 */
 
-
-
-
+/* grid_fr2 */
+.grid_fr2{
+    flex-flow: row wrap; 
+}
+.grid_fr2 div:nth-child(even){
+    padding-left: 20px;
+}
+.grid_fr2 div img{
+    width: 50px;
+}
+.grid_fr2 div h3{
+    padding: 10px 0;
+}
+.grid_fr2 div p{
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+/* /grid_fr2 */
+/* |||||||/Section 2||||||| */
 
 
 
@@ -228,7 +261,7 @@ nav li a i{
 /* MADIA QUERY */
 @media screen and (max-width:767px){
 
-    /* Header query */
+    /*** Header query ***/
     .menu_right, .menu_center{
         display: none;
     }
@@ -243,10 +276,10 @@ nav li a i{
         width: 90%;
         margin: auto 5%;
     }
-    /* /Header query */
+    /*** /Header query ***/
 
-    /* Main query */
-    /*frame one */
+    /*** Main query ***/
+    /*Section one */
     .title_frm1 h2{
         font-size: 22px;
     }
@@ -256,12 +289,26 @@ nav li a i{
     .story_frm1 a{
         font-size: 18px;
     }
+    /*/Section one */
+
+    /*Section two */
+    .list_fr2{
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    .grid_fr2 div{
+        padding-bottom: 20px;
+    }
+    .grid_fr2 div:nth-child(even){
+        padding-left: 0;
+    }
+    /*/Section two */
 }
 
 
 @media screen and (min-width:768px) and (max-width:991px){
 
-    /* Header query */
+    /*** Header query ***/
     .menu_right, .menu_center{
         display: none;
     }
@@ -273,13 +320,15 @@ nav li a i{
         margin-top: 30px;
         margin-right: 20px;
     }
-    /* /Header query */
+    /*** /Header query ***/
 
-    /* Main query */
+    /*** Main query ***/
     /* img frame one */
     .img_frm1 img{
         width: 100px;   
     }
+    /* /img frame one */
+    /*** /Main query ***/
 }
 
 
@@ -289,7 +338,4 @@ nav li a i{
         display: none;
     }
     /* /Header query */
-
-
-
 }
