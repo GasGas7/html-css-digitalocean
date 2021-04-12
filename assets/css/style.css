@@ -17,6 +17,9 @@ a{
 h2{
     color:#031C4E;
 }
+main p{
+    color:#5C6A88;
+}
 /* /Utility class */
 
 /*********** Header class ***********/
@@ -100,7 +103,6 @@ nav li a i{
 /*** /Jumbotext ***/
 
 /*** Jumbo_form ***/
-
 .jumbo_form{
     width: 40%;
     float: right;
@@ -163,7 +165,9 @@ nav li a i{
     text-decoration: underline #016DFF;   
 }
 /* signup lastchild */
+
 /*** /Jumbo_form ***/
+
 /* |||||||/Jumbotron||||||| */
 /*********** /Header class ***********/
 
@@ -254,8 +258,60 @@ nav li a i{
 /* /grid_fr2 */
 /* |||||||/Section 2||||||| */
 
+/* |||||||Section 3||||||| */
+.frame_sc_three{
+    background-color: #F3F5F9;
+}
+/* title */
+.title_frm3{
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.title_frm3 h2{
+    font-size: 35px;
+    padding: 20px;
+}
+.title_frm3 p{
+    font-size: 1.1rem;
+}
+/* /title */
 
+/* slide - img_p_icons */
+.img_fr3 .slide{
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px 0;
+    padding: 0 40px 20px 40px;
+}
+.img_fr3 .slide img{
+    height: 17.5rem;
+}
+.img_fr3 .slide i{
+    font-size: 1.5rem;  
+}
+.img_fr3 .slide i:first-child{
+    color: #6F7B97 ;
+    
+}
+.img_fr3 .slide i:last-child{
+    color: #031C4E;
+}
+.img_fr3 .icon_circle p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #031C4E;
+}
+.img_fr3 .icon_circle .circle i{
+    font-size:0.5rem;
+    color: #006AFF;
+}
+/* slide - img_p_icons */
+/* |||||||/Section 3||||||| */
 
+/* |||||||Section 4||||||| */
+/* |||||||/Section 4||||||| */
 
 
 /* MADIA QUERY */
@@ -291,19 +347,26 @@ nav li a i{
     }
     /*/Section one */
 
-    /*Section two */
+    /* Section two */
     .list_fr2{
         margin-left: 10px;
         margin-bottom: 20px;
     }
     .grid_fr2 div{
         padding-bottom: 20px;
+        padding-left: 10px;
     }
     .grid_fr2 div:nth-child(even){
-        padding-left: 0;
+        padding-left: 10px;
     }
-    /*/Section two */
-}
+    /* /Section two */
+
+    /* Section three */
+    .img_fr3 .slide i{
+        display: none;
+    }
+    /* /Section three */
+}   
 
 
 @media screen and (min-width:768px) and (max-width:991px){
@@ -328,6 +391,12 @@ nav li a i{
         width: 100px;   
     }
     /* /img frame one */
+
+    /* Section three slide */
+    .img_fr3 .slide{
+        padding: 0 20px;
+    }
+    /* Section three slide */
     /*** /Main query ***/
 }
 
