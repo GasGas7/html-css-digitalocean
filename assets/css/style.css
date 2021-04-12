@@ -516,10 +516,10 @@ footer li h3{
     font-size: 15px;
     color: #596786;
 }
-.social_links a i{
+.social_copyright .social_links a i{
    font-size: 40px;
    color: #A6ADBD;
-   padding: 25px 15px 0 0;
+   padding: 25px 15px 25px 0;
 }
 /* /social-copy-div */
 /*********** /Footer class ***********/
