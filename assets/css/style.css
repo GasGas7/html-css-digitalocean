@@ -354,6 +354,20 @@ nav li a i{
 }
 /* /griglia */
 /* |||||||/Section 4||||||| */
+
+/* |||||||Section 5||||||| */
+.frame_sc_five{
+    background-color: #0044C2;
+}
+.title_fr5 h2{
+    font-size: 1.65rem;
+    color: white;
+}
+
+
+
+/* |||||||Section 5||||||| */
+
 /*********** /Main class ***********/
 
 /* MEDIA QUERY */
