@@ -15,7 +15,7 @@ a{
 .txt_white{
     color: white;
 }
-h2,h3{
+h2,h3,h4{
     color:#031C4E;
 }
 p{
@@ -26,7 +26,10 @@ main p{
 }
 /* /Utility class */
 
+
+
 /*********** Header class ***********/
+
 /* |||||||Nav Bar||||||| */
 .row_nav{
     margin: 20px 0;
@@ -156,7 +159,7 @@ nav li a i{
     padding: 15px 5px;
     color: #031C4E;
 }
-/* signup firstchild */
+/* /signup firstchild */
 
 /* signup lastchild */
 .signup_google div:last-child{
@@ -171,14 +174,18 @@ nav li a i{
     color: #016DFF;
     text-decoration: underline #016DFF;   
 }
-/* signup lastchild */
+/* /signup lastchild */
 
 /*** /Jumbo_form ***/
 
 /* |||||||/Jumbotron||||||| */
+
 /*********** /Header class ***********/
 
+
+
 /*********** Main class ***********/
+
 /* |||||||Section 1||||||| */
 .frame_sc_one{
     background-color: #F3F5F9;
@@ -228,7 +235,7 @@ nav li a i{
     line-height: 35px;
     font-size: 1.12rem;
 }
-/* title and p */
+/* /title and p */
 
 /* list_fr2 */
 .list_fr2_int{
@@ -292,7 +299,7 @@ nav li a i{
     padding: 0 40px 20px 40px;
 }
 .img_fr3 .slide img{
-    height: 17.5rem;
+    height: 350px;
 }
 .img_fr3 .slide i{
     font-size: 1.5rem;  
@@ -314,12 +321,12 @@ nav li a i{
     color: #006AFF;
     padding-bottom: 30px;
 }
-/* slide - img_p_icons */
+/* /slide - img_p_icons */
 /* |||||||/Section 3||||||| */
 
 /* |||||||Section 4||||||| */
 .frame_4{
-    padding-top: 30px;
+    padding-top: 80px;
 }
 /* title */
 .title_fr4 h2{
@@ -329,7 +336,7 @@ nav li a i{
 
 /* griglia */
 .grid_fr4{
-    padding-bottom: 30px;
+    padding-bottom: 80px;
 }
 .grid_fr4_left{
     padding: 0 5px 0  10px;
@@ -362,11 +369,15 @@ nav li a i{
 .frame_sc_five{
     background-color: #0044C2;
 }
+/* title */
 .title_fr5 h2{
     font-size: 1.65rem;
     color: white;
     padding-top: 50px;
 }
+/* /title */
+
+/* columns */
 .columns_list_fr5{
     margin: 30px 0;
 }
@@ -395,9 +406,65 @@ nav li a i{
     color: #00D5D1;
     font-size: 0.8rem;
 }
-/* |||||||Section 5||||||| */
+/* /columns */
+/* |||||||/Section 5||||||| */
+
+/* |||||||Section 6||||||| */
+.frame_sc_six{
+    background-color: #F3F5F9 ;
+}
+/* title */
+.title_frm6 h2{
+    padding-top: 50px;
+}
+/* /title */
+
+/* slide */
+.slide_frm6{
+    margin-bottom: 100px;
+}
+.slide_frm6 .slide{
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.slide_frm6 .slide i:not(.icon_circle i){
+    font-size: 1.5rem;
+}
+.slide_frm6 .slide i:first-child:not(.icon_circle i) {
+    color: #6F7B97;
+}
+.slide_frm6 .slide i:last-child:not(.icon_circle i) {
+    color: #031C4E;
+}
+.slide_frm6 .slide .img_frm6{
+    background-color: white;
+}
+.slide_frm6 .slide .img_frm6 img{
+    margin: 50px 0;
+    height: 60px;
+}
+.slide_frm6 .slide .img_frm6 p{
+    padding-bottom: 30px;
+}
+.slide_frm6 .slide .img_frm6 a{
+    color: #006AFF;
+    margin-bottom: 50px;
+}
+.slide_frm6 .slide .img_frm6 .icon_circle{
+    font-size:0.5rem;
+    color: #006AFF;
+    padding:30px 0;
+}
+/* /slide */
+/* |||||||/Section 6||||||| */
 
 /*********** /Main class ***********/
+
+
+
+
 
 /* MEDIA QUERY */
 @media screen and (max-width:767px){
@@ -459,11 +526,18 @@ nav li a i{
     }
     /* /Section four */
 
-    /* Section four servers */
+    /* Section five */
     .list_right_fr5{
         margin-top: 50px;
     }
-     /* /Section four servers */
+     /* /Section five */
+
+     /* Section six */
+     .slide_frm6 .slide i:not(.icon_circle i){
+         display: none;
+     }
+     /* Section six */
+     
     /*** Main query ***/
 }   
 
