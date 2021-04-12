@@ -7,6 +7,7 @@ ul{
 }
 a{
     text-decoration: none;
+    font-weight: 600;
 }
 .txt_weight-600{
     font-weight: 600;
@@ -14,8 +15,11 @@ a{
 .txt_white{
     color: white;
 }
-h2{
+h2,h3{
     color:#031C4E;
+}
+p{
+    font-weight: 600;
 }
 main p{
     color:#5C6A88;
@@ -58,10 +62,10 @@ main p{
 /*** style ***/
 nav a{
     color:#031C4E;
-    font-weight: 600;
 }
 nav li a i{
     font-size: 0.8rem;
+    color:#016DFF;
 }
 /* bottone blu */
 .menu_right li:last-child a{
@@ -75,6 +79,11 @@ nav li a i{
     background-color: #016DFF;
 }
 /* bottone blu */
+/* menu hamburger */
+.ham_menu{
+    color:#016DFF;
+}
+/* /menu hamburger */
 /*** /stile ***/
 /* |||||||/Nav Bar||||||| */
 
@@ -93,7 +102,6 @@ nav li a i{
 }
 #jumbotext h1{
     font-size: 2.5rem;
-
 }
 #jumbotext p{
     padding: 30px 0 ;
@@ -147,7 +155,6 @@ nav li a i{
 .signup_google div:first-child a{
     padding: 15px 5px;
     color: #031C4E;
-    font-weight: 600
 }
 /* signup firstchild */
 
@@ -171,7 +178,7 @@ nav li a i{
 /* |||||||/Jumbotron||||||| */
 /*********** /Header class ***********/
 
-/*********** /Main class ***********/
+/*********** Main class ***********/
 /* |||||||Section 1||||||| */
 .frame_sc_one{
     background-color: #F3F5F9;
@@ -282,7 +289,6 @@ nav li a i{
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
-    margin: 0px 0;
     padding: 0 40px 20px 40px;
 }
 .img_fr3 .slide img{
@@ -306,15 +312,51 @@ nav li a i{
 .img_fr3 .icon_circle .circle i{
     font-size:0.5rem;
     color: #006AFF;
+    padding-bottom: 30px;
 }
 /* slide - img_p_icons */
 /* |||||||/Section 3||||||| */
 
 /* |||||||Section 4||||||| */
+.frame_4{
+    padding-top: 30px;
+}
+/* title */
+.title_fr4 h2{
+    padding-bottom: 30px;
+}
+/* /title */
+
+/* griglia */
+.grid_fr4{
+    padding-bottom: 30px;
+}
+.grid_fr4_left{
+    padding: 0 5px 0  10px;
+}
+.grid_fr4_center{
+    padding: 0 5px;
+}
+.grid_fr4_right{
+    padding: 0 10px 0 5px;
+}
+.grid_fr4 h3{
+    padding-top: 10px;
+}
+.grid_fr4 p{
+    font-size: 0.9rem;
+    padding: 10px 0;
+}
+.grid_fr4 a{
+    color: #006AFF;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+/* /griglia */
 /* |||||||/Section 4||||||| */
+/*********** /Main class ***********/
 
-
-/* MADIA QUERY */
+/* MEDIA QUERY */
 @media screen and (max-width:767px){
 
     /*** Header query ***/
@@ -366,6 +408,14 @@ nav li a i{
         display: none;
     }
     /* /Section three */
+
+    /* Section four */
+    .grid_fr4_left, .grid_fr4_center, .grid_fr4_right{
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+    /* /Section four */
+    /*** Main query ***/
 }   
 
 
