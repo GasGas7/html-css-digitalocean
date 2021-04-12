@@ -460,6 +460,33 @@ nav li a i{
 /* /slide */
 /* |||||||/Section 6||||||| */
 
+/* |||||||Section 7||||||| */
+.frame_sc_seven{
+    background-color: #0034AE;
+}
+.frame_7 .start_now {
+    margin-bottom: 100px;
+}
+.frame_7 .start_now h2{
+    padding-top: 100px;
+    padding-bottom: 55px;
+    font-size: 1.5rem;
+    color: white;
+}
+.frame_7 .start_now a{
+    background-color: white;
+    color: #006AFF;
+    padding: 15px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.frame_7 .start_now a:hover{
+    background-color: #006AFF;
+    border: 1px solid white;
+    color: white;
+}
+/* |||||||/Section 7||||||| */
+
 /*********** /Main class ***********/
 
 
