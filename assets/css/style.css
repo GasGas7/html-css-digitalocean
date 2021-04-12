@@ -465,10 +465,10 @@ nav li a i{
     background-color: #0034AE;
 }
 .frame_7 .start_now {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 .frame_7 .start_now h2{
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 55px;
     font-size: 1.5rem;
     color: white;
@@ -489,8 +489,40 @@ nav li a i{
 
 /*********** /Main class ***********/
 
-
-
+/*********** Footer class ***********/
+footer{
+    background-color: #031C4E;
+}
+footer .container{
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+footer li{
+    line-height: 40px;
+    color: #A6ADBD;
+    font-size: 15px;
+}
+footer li h3{
+    color: white;
+    font-size: 20px;
+}
+/* social-copy-div */
+.social_copyright p{
+    color:#A6ADBD;
+    font-size: 18px;
+    padding: 20px 25px 0px 0px;
+}
+.social_copyright span{
+    font-size: 15px;
+    color: #596786;
+}
+.social_links a i{
+   font-size: 40px;
+   color: #A6ADBD;
+   padding: 25px 15px 0 0;
+}
+/* /social-copy-div */
+/*********** /Footer class ***********/
 
 
 /* MEDIA QUERY */
